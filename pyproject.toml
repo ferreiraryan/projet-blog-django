@@ -1,0 +1,16 @@
+# pyproject.toml
+
+[tool.ruff]
+# Formatação e linting
+line-length = 99
+select = ["E", "F", "W", "I", "UP", "C4"] # Seleciona um bom conjunto de regras
+ignore = ["E501"] 
+
+[tool.ruff.format]
+quote-style = "double"
+
+
+[tool.pyright]
+include = ["djangoapp"]
+django_settings = "djangoapp.project.settings"
+
