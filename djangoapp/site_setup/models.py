@@ -19,6 +19,7 @@ class MenuLink(models.Model):
     def __str__(self):
         return self.text
 
+
 class SiteSetup(models.Model):
     class Meta:
         verbose_name = 'Setup'
